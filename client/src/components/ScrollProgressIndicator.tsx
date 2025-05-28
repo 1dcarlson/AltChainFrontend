@@ -89,7 +89,7 @@ export default function ScrollProgressIndicator() {
         style={{ 
           opacity: 1,
           backgroundColor: '#1E3A8A',
-          backgroundImage: 'linear-gradient(135deg, #1E3A8A, #1E40AF, #3730A3)'
+          backgroundImage: 'linear-gradient(135deg, #1E3A8A 0%, #1E40AF 50%, #3730A3 100%)'
         }}
       >
         <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:animate-shimmer"></span>

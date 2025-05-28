@@ -10,6 +10,7 @@ import HomePage from "./pages/HomePage";
 import ContactPage from "./pages/ContactPage";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
+import LogoPreview from "./pages/LogoPreview";
 import NotFound from "./pages/not-found";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./i18n";
@@ -29,6 +30,7 @@ function App() {
             <Route path="/contact" component={ContactPage} />
             <Route path="/privacy-policy" component={PrivacyPolicy} />
             <Route path="/terms-of-service" component={TermsOfService} />
+            <Route path="/logos" component={LogoPreview} />
             <Route component={NotFound} />
           </Switch>
           <Toaster />

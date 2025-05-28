@@ -29,7 +29,7 @@ export function useConfetti() {
       particleCount: 150,
       spread: 100,
       origin: { y: 0.6 },
-      colors: ['#1E40AF', '#0EA5E9', '#22D3EE', '#2563EB', '#FFFFFF'] as string[],
+      colors: ['#3B82F6', '#6366F1', '#7C3AED', '#22C55E', '#F59E0B'] as string[],
       startVelocity: 30,
       gravity: 1.2,
       ticks: 100
@@ -106,7 +106,7 @@ export function useConfetti() {
       particleCount: 200,
       spread: 100,
       origin: { y: 0.7 },
-      colors: ['#1E40AF', '#0EA5E9', '#22D3EE', '#2563EB', '#FFFFFF', '#7DD3FC'],
+      colors: ['#3B82F6', '#6366F1', '#7C3AED', '#22C55E', '#F59E0B', '#FFFFFF'],
       startVelocity: 40,
       gravity: 1,
       scalar: 1.2,

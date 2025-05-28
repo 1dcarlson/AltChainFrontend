@@ -46,6 +46,9 @@ export default function HomePage() {
           </div>
         </section>
         
+        {/* Section separator */}
+        <div className="border-t border-gray-200 mx-6"></div>
+        
         {/* Main Value Proposition */}
         <Features />
         

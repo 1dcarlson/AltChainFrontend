@@ -24,6 +24,8 @@ export default function ContactPage() {
             </p>
           </div>
         
+          <div className="border-t border-gray-200 pt-12"></div>
+          
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <div className="space-y-8 bg-white p-6 rounded-xl shadow-md border border-gray-200">
               <div>
@@ -46,7 +48,7 @@ export default function ContactPage() {
               </div>
             </div>
             
-            <div className="bg-white p-6 rounded-xl shadow-md border border-gray-200">
+            <div className="bg-gray-50 p-6 rounded-xl shadow-md border border-gray-200">
               <ContactForm />
             </div>
           </div>

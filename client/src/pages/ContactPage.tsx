@@ -27,28 +27,28 @@ export default function ContactPage() {
           <div className="border-t border-gray-200 pt-12"></div>
           
           <div className="grid md:grid-cols-2 gap-12 items-start">
-            <div className="space-y-8 bg-white p-6 rounded-xl shadow-md border border-gray-200">
+            <div className="space-y-8 bg-white dark:bg-[#1E293B] p-6 rounded-xl shadow-lg dark:border-gray-700">
               <div>
-                <h3 className="text-xl font-medium text-gray-800 mb-3">{t('contact.office')}</h3>
-                <address className="not-italic text-gray-800 leading-relaxed">
-                  <span className="text-gray-800">{t('contact.companyName') || "AltChain Inc."}</span><br />
-                  <span className="text-gray-800">{t('contact.companyLocation') || "Phoenix, AZ"}</span><br />
-                  <span className="text-gray-800">{t('contact.companyCountry') || "United States"}</span>
+                <h3 className="text-xl font-medium text-gray-800 dark:text-gray-200 mb-3">{t('contact.office')}</h3>
+                <address className="not-italic text-gray-800 dark:text-gray-300 leading-relaxed">
+                  <span className="text-gray-800 dark:text-gray-300">{t('contact.companyName') || "AltChain Inc."}</span><br />
+                  <span className="text-gray-800 dark:text-gray-300">{t('contact.companyLocation') || "Phoenix, AZ"}</span><br />
+                  <span className="text-gray-800 dark:text-gray-300">{t('contact.companyCountry') || "United States"}</span>
                 </address>
               </div>
               
               <div>
-                <h3 className="text-xl font-medium text-gray-800 mb-3">{t('contact.email')}</h3>
+                <h3 className="text-xl font-medium text-gray-800 dark:text-gray-200 mb-3">{t('contact.email')}</h3>
                 <p className="leading-relaxed"><a href="mailto:daniel@altchain.tech" className="text-primary hover:underline">{t('contact.companyEmailAddress') || "daniel@altchain.tech"}</a></p>
               </div>
               
               <div>
-                <h3 className="text-xl font-medium text-gray-800 mb-3">{t('contact.hours')}</h3>
-                <p className="text-gray-800 leading-relaxed">{t('contact.businessHours')}</p>
+                <h3 className="text-xl font-medium text-gray-800 dark:text-gray-200 mb-3">{t('contact.hours')}</h3>
+                <p className="text-gray-800 dark:text-gray-300 leading-relaxed">{t('contact.businessHours')}</p>
               </div>
             </div>
             
-            <div className="bg-gray-50 p-6 rounded-xl shadow-md border border-gray-200">
+            <div className="bg-gray-50 dark:bg-[#1E293B] p-6 rounded-xl shadow-lg">
               <ContactForm />
             </div>
           </div>

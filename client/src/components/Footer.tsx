@@ -9,7 +9,7 @@ export default function Footer() {
   const { t } = useTranslation();
   
   return (
-    <footer className="bg-white border-t border-gray-100 py-8 px-6">
+    <footer className="bg-white border-t border-gray-200 py-8 px-6 shadow-sm">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <motion.div 

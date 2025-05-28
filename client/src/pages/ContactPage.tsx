@@ -8,7 +8,7 @@ export default function ContactPage() {
   const { t } = useTranslation();
   
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-gray-50">
       <ScrollProgressIndicator />
       <Header />
       
@@ -24,7 +24,7 @@ export default function ContactPage() {
           </div>
         
           <div className="grid md:grid-cols-2 gap-12 items-start">
-            <div className="space-y-8 bg-white/10 p-6 rounded-xl shadow-sm">
+            <div className="space-y-8 bg-white p-6 rounded-xl shadow-md border border-gray-200">
               <div>
                 <h3 className="text-xl font-medium text-gray-800 mb-3">{t('contact.office')}</h3>
                 <address className="not-italic text-gray-800 leading-relaxed">
@@ -45,7 +45,7 @@ export default function ContactPage() {
               </div>
             </div>
             
-            <div className="bg-white/10 p-6 rounded-xl shadow-sm">
+            <div className="bg-white p-6 rounded-xl shadow-md border border-gray-200">
               <ContactForm />
             </div>
           </div>

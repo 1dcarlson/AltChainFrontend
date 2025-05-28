@@ -109,7 +109,7 @@
   --text: hsl(215, 30%, 20%); /* Darker text for better readability */
   
   /* Gradient variants - dynamically set by theme provider */
-  --gradientPrimary: linear-gradient(135deg, #1E3A8A, #1E40AF, #3730A3);
+  --gradientPrimary: #1E3A8A;
   --gradientSecondary: linear-gradient(135deg, hsl(165, 100%, 41%), hsl(190, 100%, 50%));
   --gradientBackground: linear-gradient(135deg, hsl(0, 0%, 98%), hsl(220, 30%, 96%));
   

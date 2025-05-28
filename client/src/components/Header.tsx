@@ -27,7 +27,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <Link href="/">
           <motion.div 
-            className="flex items-center gap-2 cursor-pointer"
+            className="flex items-baseline gap-2 cursor-pointer"
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.98 }}
             transition={{ duration: 0.2 }}

@@ -39,14 +39,14 @@ export default function Header() {
         <nav className="flex items-center gap-6">
           <NavLink 
             href="/" 
-            className="text-blue-100 hover:text-white text-sm font-medium transition-colors"
-            activeClassName="text-white font-medium"
+            className="text-white hover:text-blue-100 text-sm font-medium transition-colors"
+            activeClassName="text-white font-bold"
           >
             {t('about')}
           </NavLink>
           <NavLink 
             href="/contact" 
-            className="text-blue-100 hover:text-white text-sm font-medium transition-colors"
+            className="text-white hover:text-blue-100 text-sm font-medium transition-colors"
             activeClassName="text-white font-bold"
           >
             {t('contact.navLink') || "Contact"}

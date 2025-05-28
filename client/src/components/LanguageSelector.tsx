@@ -85,7 +85,7 @@ const LanguageSelector = () => {
   
   return (
     <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
-      <DropdownMenuTrigger className="flex items-center gap-2 text-sm focus:outline-none text-blue-100 hover:text-white transition-all duration-300 p-1 rounded-full group hover-lift hover-scale">
+      <DropdownMenuTrigger className="flex items-center gap-2 text-sm focus:outline-none text-white hover:text-blue-100 transition-all duration-300 p-1 rounded-full group hover-lift hover-scale">
         <div className="w-6 h-6 rounded-full overflow-hidden flex items-center justify-center shadow-sm transition-transform duration-300 group-hover:scale-105">
           {flagSvgs[selectedLang as keyof typeof flagSvgs] || 
            <div className="bg-blue-500 w-full h-full flex items-center justify-center">

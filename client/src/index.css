@@ -108,10 +108,17 @@
   --background: hsl(0, 0%, 100%);
   --text: hsl(215, 30%, 20%); /* Darker text for better readability */
   
-  /* Gradient variants - dynamically set by theme provider */
-  --gradientPrimary: #1E3A8A;
-  --gradientSecondary: linear-gradient(135deg, hsl(165, 100%, 41%), hsl(190, 100%, 50%));
+  /* Modern color system - refined palette */
+  --gradientPrimary: #3B82F6;
+  --gradientSecondary: #6366F1;
   --gradientBackground: linear-gradient(135deg, hsl(0, 0%, 98%), hsl(220, 30%, 96%));
+  
+  /* Color tokens */
+  --color-primary: #3B82F6;
+  --color-secondary: #6366F1;
+  --color-text-light: #E5E7EB;
+  --color-background-dark: #0F172A;
+  --color-input-dark: #1E293B;
   
   /* UI component mappings */
   --foreground: var(--text);
@@ -157,9 +164,10 @@
   --border: hsl(220, 15%, 25%); /* #30363d - Border color for contrast */
   --input: hsl(220, 15%, 25%);
   
-  /* Refined gradients for dark theme */
-  --gradientPrimary: linear-gradient(135deg, #0F172A, #1E293B, #334155);
-  --gradientBackground: linear-gradient(135deg, hsl(222, 25%, 8%), hsl(222, 25%, 12%));
+  /* Refined gradients for dark theme with modern palette */
+  --gradientPrimary: #3B82F6;
+  --gradientSecondary: #6366F1;
+  --gradientBackground: linear-gradient(135deg, #0F172A, #1E293B);
 }
 
 /* Enhance dark mode text opacity for better readability */

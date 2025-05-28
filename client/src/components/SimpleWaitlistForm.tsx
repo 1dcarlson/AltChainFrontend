@@ -90,7 +90,7 @@ export default function SimpleWaitlistForm() {
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder={t('waitlist.namePlaceholder') || "Your name (optional)"}
-              className="w-full px-4 py-3 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-indigo-500 hover:border-indigo-500 text-gray-800 bg-white dark:bg-slate-700 dark:border-slate-600 dark:text-white transition-all duration-300"
+              className="w-full px-4 py-3 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-indigo-500 hover:border-indigo-500 text-gray-800 bg-white dark:bg-[#1E293B] dark:border-slate-600 dark:text-[#E5E7EB] transition-all duration-300"
               disabled={formState === 'submitting'}
             />
             <input
@@ -100,7 +100,7 @@ export default function SimpleWaitlistForm() {
               onChange={(e) => setEmail(e.target.value)}
               placeholder={t('waitlist.placeholder')}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-indigo-500 hover:border-indigo-500 text-gray-800 bg-white dark:bg-slate-700 dark:border-slate-600 dark:text-white transition-all duration-300"
+              className="w-full px-4 py-3 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-indigo-500 hover:border-indigo-500 text-gray-800 bg-white dark:bg-[#1E293B] dark:border-slate-600 dark:text-[#E5E7EB] transition-all duration-300"
               disabled={formState === 'submitting'}
             />
           </div>

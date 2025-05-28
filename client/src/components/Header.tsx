@@ -36,14 +36,14 @@ export default function Header() {
         <nav className="flex items-center gap-6">
           <NavLink 
             href="/" 
-            className="text-gray-800 hover:text-gray-600 dark:text-white dark:hover:text-blue-100 text-sm font-medium transition-colors"
+            className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 text-sm font-medium transition-colors"
             activeClassName="text-gray-900 dark:text-white font-bold"
           >
             {t('about')}
           </NavLink>
           <NavLink 
             href="/contact" 
-            className="text-gray-800 hover:text-gray-600 dark:text-white dark:hover:text-blue-100 text-sm font-medium transition-colors"
+            className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 text-sm font-medium transition-colors"
             activeClassName="text-gray-900 dark:text-white font-bold"
           >
             {t('contact.navLink') || "Contact"}

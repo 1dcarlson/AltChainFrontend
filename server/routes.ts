@@ -205,7 +205,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
     try {
       await sendEmail({
-        to: 'daniel@altchain.app',
+        to: 'daniel@altchain.tech',
         subject: `New message from ${name}`,
         text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
         html: `

@@ -90,7 +90,7 @@ export default function SimpleWaitlistForm() {
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder={t('waitlist.namePlaceholder') || "Your name (optional)"}
-              className="w-full px-4 py-3 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-indigo-500 hover:border-indigo-500 text-gray-800 bg-gray-50 focus:bg-white dark:bg-[#1E293B] dark:border-slate-600 dark:text-[#E5E7EB] transition-all duration-300"
+              className="w-full px-4 py-3 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-[#3B82F6] hover:border-[#3B82F6] text-gray-800 bg-gray-50 focus:bg-white dark:bg-[#1E293B] dark:border-slate-600 dark:text-[#E5E7EB] transition-all duration-300"
               disabled={formState === 'submitting'}
             />
             <input
@@ -100,7 +100,7 @@ export default function SimpleWaitlistForm() {
               onChange={(e) => setEmail(e.target.value)}
               placeholder={t('waitlist.placeholder')}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-indigo-500 hover:border-indigo-500 text-gray-800 bg-gray-50 focus:bg-white dark:bg-[#1E293B] dark:border-slate-600 dark:text-[#E5E7EB] transition-all duration-300"
+              className="w-full px-4 py-3 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:border-[#3B82F6] hover:border-[#3B82F6] text-gray-800 bg-gray-50 focus:bg-white dark:bg-[#1E293B] dark:border-slate-600 dark:text-[#E5E7EB] transition-all duration-300"
               disabled={formState === 'submitting'}
             />
           </div>
@@ -113,7 +113,7 @@ export default function SimpleWaitlistForm() {
           <button 
             type="submit" 
             disabled={formState === 'submitting'}
-            className="w-full sm:w-auto sm:mx-auto px-8 py-3.5 bg-primary text-white font-medium text-base sm:text-lg rounded-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500/50 disabled:opacity-70 hover-lift hover-glow hover:shadow-xl hover:shadow-primary/40 hover:scale-105 active:scale-95 relative overflow-hidden group"
+            className="w-full sm:w-auto sm:mx-auto px-8 py-3.5 bg-[#3B82F6] hover:bg-blue-600 text-white font-medium text-base sm:text-lg rounded-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#3B82F6]/50 disabled:opacity-70 hover-lift hover-glow hover:shadow-xl hover:shadow-[#3B82F6]/40 hover:scale-105 active:scale-95 relative overflow-hidden group"
           >
             <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-shimmer"></span>
             {formState === 'submitting' ? (

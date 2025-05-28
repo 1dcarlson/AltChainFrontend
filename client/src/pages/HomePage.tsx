@@ -22,7 +22,8 @@ export default function HomePage() {
           <div className="text-center animate-pulse-once">
             <PersonalWelcome />
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-gray-800">
-              {t('hero.title')}
+              <span className="text-gray-800">{t('hero.title').split(' ').slice(0, -2).join(' ')}</span>{' '}
+              <span className="text-[#3B82F6]">{t('hero.title').split(' ').slice(-2).join(' ')}</span>
             </h2>
             <p className="text-lg md:text-xl text-gray-800 font-medium mb-8 max-w-2xl mx-auto leading-relaxed">
               {t('hero.description')}

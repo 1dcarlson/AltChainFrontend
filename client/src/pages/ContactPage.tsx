@@ -15,8 +15,9 @@ export default function ContactPage() {
       <main className="flex-1">
         <section className="max-w-4xl mx-auto px-6 py-16 md:py-24">
           <div className="text-center mb-12">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-gray-800">
-              {t('contact.pageTitle')}
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+              <span className="text-gray-800">{t('contact.pageTitle').split(' ')[0]}</span>{' '}
+              <span className="text-[#3B82F6]">{t('contact.pageTitle').split(' ').slice(1).join(' ')}</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-800 font-medium mb-8 max-w-2xl mx-auto leading-relaxed">
               {t('contact.pageDescription')}

@@ -20,7 +20,7 @@ export default function Header() {
   }, [isDarkMode]);
   
   return (
-    <header className="bg-[#F9FAFB] dark:bg-[#0F172A] shadow-sm border-b border-gray-200 dark:border-gray-700 py-5 px-6 sticky top-0 z-50 transition-all duration-300">
+    <header className="bg-[#F9FAFB] dark:bg-[#0F172A] shadow-sm border-b border-gray-200 dark:border-gray-700 py-6 px-6 sticky top-0 z-50 transition-all duration-300">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <Link href="/">
           <motion.div 

@@ -1,5 +1,5 @@
 // Optimized network nodes logo for favicon and general use
-export default function ModernLogo3({ className = "w-8 h-8" }: { className?: string }) {
+export default function ModernLogo3({ className = "w-8 h-8", isDark = false }: { className?: string, isDark?: boolean }) {
   return (
     <svg
       className={className}

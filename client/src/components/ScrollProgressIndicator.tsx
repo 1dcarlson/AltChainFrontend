@@ -80,7 +80,7 @@ export default function ScrollProgressIndicator() {
       {/* Scroll to top button */}
       <button
         onClick={scrollToTop}
-        className={`fixed bottom-6 right-6 text-white p-4 rounded-full shadow-xl z-50 transition-all duration-300 overflow-hidden group border-2 border-white ${
+        className={`fixed bottom-6 right-6 text-white p-4 rounded-full shadow-xl z-50 transition-all duration-300 overflow-hidden group ${
           showScrollToTop 
             ? 'opacity-100 translate-y-0' 
             : 'opacity-0 translate-y-10 pointer-events-none'
@@ -88,8 +88,7 @@ export default function ScrollProgressIndicator() {
         aria-label="Scroll to top"
         style={{ 
           opacity: 1,
-          backgroundColor: '#1E3A8A',
-          backgroundImage: 'linear-gradient(135deg, #1E3A8A 0%, #1E40AF 50%, #3730A3 100%)'
+          background: 'var(--gradientPrimary)'
         }}
       >
         <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:animate-shimmer"></span>

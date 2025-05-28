@@ -28,9 +28,9 @@ export default function ContactPage() {
               <div>
                 <h3 className="text-xl font-medium text-gray-800 mb-3">{t('contact.office')}</h3>
                 <address className="not-italic text-gray-800 leading-relaxed">
-                  {t('contact.companyName') || "AltChain Inc."}<br />
-                  {t('contact.companyLocation') || "Phoenix, AZ"}<br />
-                  {t('contact.companyCountry') || "United States"}
+                  <span className="text-gray-800">{t('contact.companyName') || "AltChain Inc."}</span><br />
+                  <span className="text-gray-800">{t('contact.companyLocation') || "Phoenix, AZ"}</span><br />
+                  <span className="text-gray-800">{t('contact.companyCountry') || "United States"}</span>
                 </address>
               </div>
               

@@ -7,6 +7,11 @@ import Benefits from "../components/Benefits";
 import HowItWorks from "../components/HowItWorks";
 import FAQ from "../components/FAQ";
 import PersonalWelcome from "../components/PersonalWelcome";
+import ModernLogo1 from "../components/logos/ModernLogo1";
+import ModernLogo2 from "../components/logos/ModernLogo2";
+import ModernLogo3 from "../components/logos/ModernLogo3";
+import ModernLogo4 from "../components/logos/ModernLogo4";
+import ModernLogo5 from "../components/logos/ModernLogo5";
 import { CheckCircle } from "lucide-react";
 
 export default function HomePage() {
@@ -15,6 +20,37 @@ export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
+      
+      {/* Logo Preview Section - TEMPORARY */}
+      <div className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-slate-800 dark:to-slate-700 py-8 border-b">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-2xl font-bold text-center mb-6 text-gray-800 dark:text-white">New Logo Design Options</h2>
+          <div className="grid grid-cols-5 gap-4">
+            <div className="text-center p-4 bg-white dark:bg-slate-600 rounded-lg shadow-sm">
+              <ModernLogo1 className="w-12 h-12 mx-auto mb-2" />
+              <p className="text-xs text-gray-600 dark:text-gray-300">Interconnected Links</p>
+            </div>
+            <div className="text-center p-4 bg-white dark:bg-slate-600 rounded-lg shadow-sm">
+              <ModernLogo2 className="w-12 h-12 mx-auto mb-2" />
+              <p className="text-xs text-gray-600 dark:text-gray-300">Geometric A</p>
+            </div>
+            <div className="text-center p-4 bg-white dark:bg-slate-600 rounded-lg shadow-sm">
+              <ModernLogo3 className="w-12 h-12 mx-auto mb-2" />
+              <p className="text-xs text-gray-600 dark:text-gray-300">Network Nodes</p>
+            </div>
+            <div className="text-center p-4 bg-white dark:bg-slate-600 rounded-lg shadow-sm">
+              <ModernLogo4 className="w-12 h-12 mx-auto mb-2" />
+              <p className="text-xs text-gray-600 dark:text-gray-300">Hexagonal Badge</p>
+            </div>
+            <div className="text-center p-4 bg-white dark:bg-slate-600 rounded-lg shadow-sm">
+              <ModernLogo5 className="w-12 h-12 mx-auto mb-2" />
+              <p className="text-xs text-gray-600 dark:text-gray-300">Minimal Monogram</p>
+            </div>
+          </div>
+          <p className="text-center text-sm text-gray-500 dark:text-gray-400 mt-4">All designs are modern, timeless, and optimized for favicon use</p>
+        </div>
+      </div>
+      
       <main className="flex-1">
         {/* Hero Section */}
         <section className="max-w-4xl mx-auto px-6 py-16 md:py-24">

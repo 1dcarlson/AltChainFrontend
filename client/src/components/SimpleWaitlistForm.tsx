@@ -101,7 +101,7 @@ export default function SimpleWaitlistForm() {
           <button 
             type="submit" 
             disabled={formState === 'submitting'}
-            className="w-full sm:w-auto sm:mx-auto px-8 py-3 bg-primary text-white font-medium rounded-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500/50 disabled:opacity-70 hover-lift hover-glow relative overflow-hidden group"
+            className="w-full sm:w-auto sm:mx-auto px-8 py-3.5 bg-primary text-white font-medium text-base sm:text-lg rounded-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500/50 disabled:opacity-70 hover-lift hover-glow relative overflow-hidden group"
           >
             <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-shimmer"></span>
             {formState === 'submitting' ? (

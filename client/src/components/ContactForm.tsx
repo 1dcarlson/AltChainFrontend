@@ -130,7 +130,7 @@ export default function ContactForm() {
           type="submit" 
           disabled={isSubmitting}
           className={`
-            w-full py-3 px-8 bg-primary hover:bg-primary/90 text-white font-medium rounded-xl 
+            w-full py-3.5 px-8 bg-primary hover:bg-primary/90 text-white font-medium text-base sm:text-lg rounded-xl 
             transition-all duration-300
             focus:outline-none focus:ring-2 focus:ring-primary/30 focus:ring-offset-2
             disabled:opacity-70 relative overflow-hidden hover:shadow-lg hover:shadow-primary/30 group

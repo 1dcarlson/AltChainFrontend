@@ -88,8 +88,8 @@ export default function ScrollProgressIndicator() {
         aria-label="Scroll to top"
         style={{ 
           opacity: 1,
-          backgroundColor: '#4F46E5',
-          backgroundImage: 'linear-gradient(135deg, hsl(215, 100%, 50%), hsl(240, 100%, 65%))'
+          backgroundColor: '#1E3A8A',
+          backgroundImage: 'linear-gradient(135deg, #1E3A8A, #1E40AF, #3730A3)'
         }}
       >
         <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:animate-shimmer"></span>

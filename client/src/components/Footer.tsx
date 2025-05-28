@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'wouter';
+import LogoIcon from './LogoIcon';
 import NavLink from './NavLink';
 import { motion } from 'framer-motion';
 import ModernLogo3 from './logos/ModernLogo3';
@@ -21,7 +22,7 @@ export default function Footer() {
               <ModernLogo3 className="w-5 h-5 text-slate-600 dark:text-slate-400" />
               <h2 className="text-primary font-bold text-lg">AltChain</h2>
             </div>
-            <p className="text-gray-700 text-sm mt-1 font-medium">{t('hero.title')}</p>
+            <p className="text-gray-700 dark:text-gray-400 text-sm mt-1 font-medium">{t('hero.title')}</p>
           </motion.div>
           
           <motion.div 
@@ -30,20 +31,20 @@ export default function Footer() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            <NavLink href="/privacy-policy" className="text-gray-800 hover:text-primary text-sm font-medium">
+            <NavLink href="/privacy-policy" className="text-gray-800 dark:text-gray-400 hover:text-primary text-sm font-medium">
               {t('footer.privacy')}
             </NavLink>
-            <NavLink href="/terms-of-service" className="text-gray-800 hover:text-primary text-sm font-medium">
+            <NavLink href="/terms-of-service" className="text-gray-800 dark:text-gray-400 hover:text-primary text-sm font-medium">
               {t('footer.terms')}
             </NavLink>
-            <NavLink href="/contact" className="text-gray-800 hover:text-primary text-sm font-medium">
+            <NavLink href="/contact" className="text-gray-800 dark:text-gray-400 hover:text-primary text-sm font-medium">
               {t('footer.contact')}
             </NavLink>
           </motion.div>
         </div>
         
         <motion.div 
-          className="mt-8 text-center text-gray-700 text-sm font-medium"
+          className="mt-8 text-center text-gray-700 dark:text-gray-400 text-sm font-medium"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}

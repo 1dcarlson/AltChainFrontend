@@ -70,7 +70,7 @@ export default function SimpleWaitlistForm() {
   return (
     <div className="waitlist-form-container w-full">
       {formState === 'success' ? (
-        <div className="success-message text-center p-4 bg-green-50 text-green-700 rounded-lg">
+        <div className="success-message text-center p-6 bg-green-50 text-green-700 rounded-xl shadow-sm border border-green-200">
           <p className="font-medium">{t('waitlist.success')}</p>
           <p className="text-sm mt-2">{t('waitlist.successDetail')}</p>
         </div>
@@ -83,7 +83,7 @@ export default function SimpleWaitlistForm() {
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder={t('waitlist.namePlaceholder') || "Your name (optional)"}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary text-gray-800 transition-all duration-300 hover:border-primary/70 focus:border-primary/70 hover:shadow-sm"
+              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-indigo-500 hover:border-indigo-500 text-gray-800 bg-white dark:bg-slate-700 dark:border-slate-600 dark:text-white transition-all duration-300"
               disabled={formState === 'submitting'}
             />
             <input
@@ -93,7 +93,7 @@ export default function SimpleWaitlistForm() {
               onChange={(e) => setEmail(e.target.value)}
               placeholder={t('waitlist.placeholder')}
               required
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary text-gray-800 transition-all duration-300 hover:border-primary/70 focus:border-primary/70 hover:shadow-sm"
+              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-indigo-500 hover:border-indigo-500 text-gray-800 bg-white dark:bg-slate-700 dark:border-slate-600 dark:text-white transition-all duration-300"
               disabled={formState === 'submitting'}
             />
           </div>
@@ -101,7 +101,7 @@ export default function SimpleWaitlistForm() {
           <button 
             type="submit" 
             disabled={formState === 'submitting'}
-            className="w-full sm:w-auto sm:mx-auto px-6 py-2 bg-primary text-white font-medium rounded-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary/50 disabled:opacity-70 hover-lift hover-glow relative overflow-hidden group"
+            className="w-full sm:w-auto sm:mx-auto px-8 py-3 bg-primary text-white font-medium rounded-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500/50 disabled:opacity-70 hover-lift hover-glow relative overflow-hidden group"
           >
             <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-shimmer"></span>
             {formState === 'submitting' ? (

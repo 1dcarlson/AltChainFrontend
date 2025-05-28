@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'wouter';
 import NavLink from './NavLink';
 import { motion } from 'framer-motion';
+import ModernLogo3 from './logos/ModernLogo3';
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -16,7 +17,10 @@ export default function Footer() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-primary font-bold text-lg">AltChain</h2>
+            <div className="flex items-center gap-2">
+              <ModernLogo3 className="w-5 h-5 text-slate-600 dark:text-slate-400" />
+              <h2 className="text-primary font-bold text-lg">AltChain</h2>
+            </div>
             <p className="text-gray-700 text-sm mt-1 font-medium">{t('hero.title')}</p>
           </motion.div>
           

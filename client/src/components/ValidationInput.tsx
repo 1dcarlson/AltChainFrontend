@@ -164,12 +164,12 @@ export default function ValidationInput({
         maxLength={maxLength}
         autoComplete={autoComplete}
         className={cn(
-          "w-full px-4 py-3 border rounded-md transition-all duration-300 text-gray-900 dark:text-white font-medium",
+          "w-full px-4 py-3 border rounded-xl transition-all duration-300 text-gray-900 dark:text-white font-medium",
           "focus:outline-none focus:ring-2 focus:ring-opacity-50 shadow-sm",
           "block mx-auto", // Add these classes for Firefox compatibility
           "bg-white dark:bg-gray-800 dark:border-gray-700", // Explicit dark mode styling
           "hover:border-primary/60 hover:shadow-sm", // Hover effect
-          isFocused ? "border-primary focus:ring-primary/30" : "border-gray-300 dark:border-gray-700", 
+          isFocused ? "border-indigo-500 focus:ring-blue-500/30" : "border-gray-300 dark:border-gray-700 hover:border-indigo-500", 
           !isValid && touched ? "border-red-500 focus:ring-red-200" : "",
           isValid && value && touched ? "border-green-500 focus:ring-green-200" : "",
           className

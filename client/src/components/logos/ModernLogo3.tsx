@@ -9,9 +9,9 @@ export default function ModernLogo3({ className = "w-8 h-8" }: { className?: str
     >
       <defs>
         <linearGradient id="altchain-logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#3B82F6" />
-          <stop offset="50%" stopColor="#6366F1" />
-          <stop offset="100%" stopColor="#7C3AED" />
+          <stop offset="0%" stopColor="#475569" />
+          <stop offset="50%" stopColor="#64748b" />
+          <stop offset="100%" stopColor="#475569" />
         </linearGradient>
       </defs>
       

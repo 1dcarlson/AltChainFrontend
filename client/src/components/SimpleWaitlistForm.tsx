@@ -98,10 +98,15 @@ export default function SimpleWaitlistForm() {
             />
           </div>
           
+          {/* Privacy assurance */}
+          <p className="text-xs text-gray-600 text-center mt-1 mb-2">
+            🔒 {t('waitlist.privacy') || "We'll never spam you. Unsubscribe anytime."}
+          </p>
+          
           <button 
             type="submit" 
             disabled={formState === 'submitting'}
-            className="w-full sm:w-auto sm:mx-auto px-8 py-3.5 bg-primary text-white font-medium text-base sm:text-lg rounded-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500/50 disabled:opacity-70 hover-lift hover-glow relative overflow-hidden group"
+            className="w-full sm:w-auto sm:mx-auto px-8 py-3.5 bg-primary text-white font-medium text-base sm:text-lg rounded-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500/50 disabled:opacity-70 hover-lift hover-glow hover:shadow-xl hover:shadow-primary/40 hover:scale-105 active:scale-95 relative overflow-hidden group"
           >
             <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-shimmer"></span>
             {formState === 'submitting' ? (

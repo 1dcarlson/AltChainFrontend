@@ -70,9 +70,16 @@ export default function SimpleWaitlistForm() {
   return (
     <div className="waitlist-form-container w-full">
       {formState === 'success' ? (
-        <div className="success-message text-center p-6 bg-green-50 text-green-700 rounded-xl shadow-sm border border-green-200">
-          <p className="font-medium">{t('waitlist.success')}</p>
-          <p className="text-sm mt-2">{t('waitlist.successDetail')}</p>
+        <div className="success-message text-center p-6 bg-green-50 text-green-700 rounded-2xl shadow-sm border border-green-200">
+          <div className="flex items-center justify-center mb-3">
+            <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+              <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+          </div>
+          <p className="font-semibold text-lg mb-2">{t('waitlist.success')}</p>
+          <p className="text-sm leading-relaxed">{t('waitlist.successDetail')}</p>
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="flex flex-col gap-2 w-full">
@@ -83,7 +90,7 @@ export default function SimpleWaitlistForm() {
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder={t('waitlist.namePlaceholder') || "Your name (optional)"}
-              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-indigo-500 hover:border-indigo-500 text-gray-800 bg-white dark:bg-slate-700 dark:border-slate-600 dark:text-white transition-all duration-300"
+              className="w-full px-4 py-3 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-indigo-500 hover:border-indigo-500 text-gray-800 bg-white dark:bg-slate-700 dark:border-slate-600 dark:text-white transition-all duration-300"
               disabled={formState === 'submitting'}
             />
             <input
@@ -93,7 +100,7 @@ export default function SimpleWaitlistForm() {
               onChange={(e) => setEmail(e.target.value)}
               placeholder={t('waitlist.placeholder')}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-indigo-500 hover:border-indigo-500 text-gray-800 bg-white dark:bg-slate-700 dark:border-slate-600 dark:text-white transition-all duration-300"
+              className="w-full px-4 py-3 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-indigo-500 hover:border-indigo-500 text-gray-800 bg-white dark:bg-slate-700 dark:border-slate-600 dark:text-white transition-all duration-300"
               disabled={formState === 'submitting'}
             />
           </div>

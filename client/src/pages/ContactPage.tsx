@@ -27,7 +27,7 @@ export default function ContactPage() {
             <div className="space-y-8 bg-white/10 p-6 rounded-xl shadow-sm">
               <div>
                 <h3 className="text-xl font-medium text-gray-800 mb-3">{t('contact.office')}</h3>
-                <address className="not-italic text-gray-800">
+                <address className="not-italic text-gray-800 leading-relaxed">
                   {t('contact.companyName') || "AltChain Inc."}<br />
                   {t('contact.companyLocation') || "Phoenix, AZ"}<br />
                   {t('contact.companyCountry') || "United States"}
@@ -36,12 +36,12 @@ export default function ContactPage() {
               
               <div>
                 <h3 className="text-xl font-medium text-gray-800 mb-3">{t('contact.email')}</h3>
-                <p><a href="mailto:daniel@altchain.tech" className="text-primary hover:underline">{t('contact.companyEmailAddress') || "daniel@altchain.tech"}</a></p>
+                <p className="leading-relaxed"><a href="mailto:daniel@altchain.tech" className="text-primary hover:underline">{t('contact.companyEmailAddress') || "daniel@altchain.tech"}</a></p>
               </div>
               
               <div>
                 <h3 className="text-xl font-medium text-gray-800 mb-3">{t('contact.hours')}</h3>
-                <p className="text-gray-800">{t('contact.businessHours')}</p>
+                <p className="text-gray-800 leading-relaxed">{t('contact.businessHours')}</p>
               </div>
             </div>
             

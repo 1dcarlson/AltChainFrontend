@@ -50,8 +50,8 @@ export default function ContactForm() {
       });
 
       const result = await response.json();
-      if (response.ok && result.success) {
-        setStatus(t('contact.success') + ' ✅');
+      if (response.ok) {
+        setStatus(result.message || t('contact.success') + ' ✅');
         // Reset the form completely
         resetForm();
         // After a successful submission, show the confetti
